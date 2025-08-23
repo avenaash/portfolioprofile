@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avenaash | Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">Avenaash</a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+             <div class="nav-controls">
+         <button id="musicToggle" class="music-toggle" title="Toggle Background Music">
+           <i class="fas fa-music"></i>
+         </button>
+         <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+         </div>
+       </div>
+     </div>
+   </nav>
+
+   <!-- Background Audio -->
+   <audio id="backgroundMusic" loop>
+     <source src="interstellar-theme.mp3" type="audio/mpeg">
+     <source src="interstellar-theme.ogg" type="audio/ogg">
+     Your browser does not support the audio element.
+   </audio>
+
+   <!-- ASMR Ambient Generator -->
+   <div id="asmrGenerator" style="display: none;"></div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Avenaash</span>
+          </h1>
+          <h2 class="hero-subtitle">Software Engineer & DevOps Specialist</h2>
+          <p class="hero-description">
+            Passionate about building scalable applications, implementing CI/CD pipelines, 
+            and creating containerized solutions with modern technologies.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-card">
+            <div class="profile-avatar">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="profile-info">
+              <h3>Backend Developer</h3>
+              <p>Spring Boot • Docker • Kubernetes • Java</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I am a dedicated software engineer with expertise in backend development, 
+            DevOps practices, and cloud technologies. My passion lies in creating efficient, 
+            scalable solutions that solve real-world problems.
+          </p>
+          <p>
+            With experience in Spring Boot, Docker, and Kubernetes, I specialize 
+            in building robust applications and implementing automated deployment pipelines. 
+            I believe in writing clean, maintainable code and following best practices.
+          </p>
+                                             <div class="about-stats">
+               <div class="stat">
+                 <h3>2+</h3>
+                 <p>Years Experience</p>
+               </div>
+               <div class="stat">
+                 <h3>18+</h3>
+                 <p>Projects Completed</p>
+               </div>
+               <div class="stat">
+                 <h3>8+</h3>
+                 <p>Technologies</p>
+               </div>
+             </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-content">
+        <div class="experience-card">
+          <h3>System Engineer</h3>
+          <h4>Tata Consultancy Services (TCS)</h4>
+          <p class="experience-duration">January 2024 – Present</p>
+          <ul class="experience-details">
+            <li>Worked as a System Engineer managing enterprise-scale applications and infrastructure.</li>
+            <li>Handled production issues with critical thinking and root cause analysis to ensure minimal downtime.</li>
+            <li>Collaborated with cross-functional teams to improve system reliability and performance.</li>
+            <li>Automated routine operational tasks, improving efficiency and reducing manual overhead.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+                 <div class="project-card">
+           <div class="project-image">
+             <a href="https://github.com/avenaash/PortfolioDjango" target="_blank" class="project-icon-link">
+               <i class="fab fa-python"></i>
+             </a>
+           </div>
+           <div class="project-content">
+             <h3>Django Portfolio Website</h3>
+             <p>A professional portfolio website built with Django framework featuring 
+                responsive design, project showcase, and dynamic content management.</p>
+             <div class="project-tech">
+               <span class="tech-tag">Django</span>
+               <span class="tech-tag">Python</span>
+               <span class="tech-tag">HTML</span>
+               <span class="tech-tag">Docker</span>
+             </div>
+             <div class="project-links">
+               <a href="https://github.com/avenaash/PortfolioDjango" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+               <a href="https://portfolio-django-nu.vercel.app" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+             </div>
+           </div>
+         </div>
+
+                 <div class="project-card">
+           <div class="project-image">
+             <a href="https://github.com/avenaash/SpringBoot-CRUD" target="_blank" class="project-icon-link">
+               <i class="fab fa-java"></i>
+             </a>
+           </div>
+           <div class="project-content">
+             <h3>Spring Boot CRUD API</h3>
+             <p>RESTful API with comprehensive CRUD operations featuring AveCart project, 
+                JWT authentication, and database integration for scalable backend services.</p>
+             <div class="project-tech">
+               <span class="tech-tag">Spring Boot</span>
+               <span class="tech-tag">Java</span>
+               <span class="tech-tag">Docker</span>
+             </div>
+             <div class="project-links">
+               <a href="https://github.com/avenaash/SpringBoot-CRUD" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+               <a href="#" target="_blank" class="project-link"><i class="fas fa-cog"></i> API</a>
+             </div>
+           </div>
+         </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <a href="https://github.com/avenaash/devops-cicd-pipeline" target="_blank" class="project-icon-link">
+              <i class="fab fa-docker"></i>
+            </a>
+          </div>
+          <div class="project-content">
+            <h3>DevOps</h3>
+            <p>End-to-end Jenkins pipeline integrated with Docker and Kubernetes 
+               for automated testing, building, and deployment.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Jenkins</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Kubernetes</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/avenaash/devops-cicd-pipeline" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="https://github.com/avenaash/devops-cicd-pipeline/wiki" target="_blank" class="project-link"><i class="fas fa-book"></i> Docs</a>
+            </div>
+          </div>
+        </div>
+
+                 <div class="project-card">
+           <div class="project-image">
+             <a href="https://github.com/avenaash/MovieReview" target="_blank" class="project-icon-link">
+               <i class="fas fa-film"></i>
+             </a>
+           </div>
+           <div class="project-content">
+             <h3>Spring Boot Movie Review App</h3>
+             <p>A comprehensive movie review application with user authentication, 
+                movie ratings, reviews, and RESTful API for movie management.</p>
+             <div class="project-tech">
+               <span class="tech-tag">Spring Boot</span>
+               <span class="tech-tag">Java</span>
+               <span class="tech-tag">MySQL</span>
+               <span class="tech-tag">JWT</span>
+             </div>
+             <div class="project-links">
+               <a href="https://github.com/avenaash/MovieReview" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+               <a href="#" target="_blank" class="project-link"><i class="fas fa-cog"></i> API</a>
+             </div>
+           </div>
+         </div>
+
+         <div class="project-card">
+           <div class="project-image">
+             <a href="https://github.com/avenaash/PyScripts" target="_blank" class="project-icon-link">
+               <i class="fas fa-cog"></i>
+             </a>
+           </div>
+           <div class="project-content">
+             <h3>Python Automation Scripts</h3>
+             <p>Collection of Python automation scripts including JSON beautifier, 
+                logging utilities, and data processing tools for everyday tasks.</p>
+             <div class="project-tech">
+               <span class="tech-tag">Python</span>
+               <span class="tech-tag">JSON</span>
+               <span class="tech-tag">Automation</span>
+               <span class="tech-tag">Scripting</span>
+             </div>
+             <div class="project-links">
+               <a href="https://github.com/avenaash/PyScripts" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+               <a href="#" target="_blank" class="project-link"><i class="fas fa-download"></i> Scripts</a>
+             </div>
+           </div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Backend Development</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-java"></i>
+              <span>Java</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-leaf"></i>
+              <span>Spring Boot</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>JWT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>DevOps & Cloud</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-docker"></i>
+              <span>Docker</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-kubernetes"></i>
+              <span>Kubernetes</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-aws"></i>
+              <span>AWS</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-jenkins"></i>
+              <span>Jenkins</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools & Others</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-server"></i>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>avenaashrs@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <h3>GitHub</h3>
+              <p><a href="https://github.com/avenaash" target="_blank">github.com/avenaash</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h3>LinkedIn</h3>
+              <p><a href="https://www.linkedin.com/in/avenaash-r-s/" target="_blank">linkedin</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Avenaash. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
